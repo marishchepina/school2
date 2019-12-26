@@ -1,0 +1,457 @@
+*, *:after, *:before {margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+
+html, body                 {width: 100%; min-height: 100%; height: 100%}
+body                       {font: 16px/24px "Roboto Condensed" , Tahoma, arial; color: #6f454f;  background: #fff;}
+p                          {font: 16px/24px "Roboto Condensed" , Tahoma, arial; color: #6f454f; text-indent: 20px; padding-bottom: 20px}
+a                          {cursor: pointer; color: #6f454f; text-decoration: underline; border: none}
+a:hover, a:visited, a:active{border: none; outline: none}
+
+.centering                 {margin: 0 auto; width: 92%; position: relative; padding: 25px 0 25px 0; max-width: 1400px}
+.height100                 {height: 100%; min-height: 100%;}
+.red                       {background: red}
+.hide                       {display: none !important; z-index: -1 !important;}
+h1                          {padding: 50px 0 20px 0; font-weight: bold; font-size: 30px; color: #bb3732; line-height: 38px; text-transform: uppercase}
+h2                          {width: 100%; padding: 25px 0 20px 0; color: #426b65; font-size: 24px; line-height: 32px; text-transform: uppercase;}
+h3                          {font-weight: normal; padding: 10px 0 10px 0; font-size: 22px; max-width: 500px; line-height: 30px; display: block; margin: 0 auto; text-transform: uppercase; }
+h4                          {width: 100%; color: #426b65; font-size: 22px;  margin: 57px 0 20px 0; line-height: 32px; text-transform: uppercase;}
+h6                          {font-size: 16px; font-weight: normal; padding: 10px; text-transform: uppercase; margin: 15px 0 10px 0}
+ul                          {list-style-type: none}
+.width25                    {width: 25%; padding: 20px; min-width: 300px}
+.width50                    {width: 50%; padding: 10px}
+.width75                    {width: 75%; padding: 20px}
+.width48                    {width: 48%}
+.width30                    {width: 30%}
+.width-320-Wrap             {position: relative; width: 100%; padding: 10px 0 10px 320px; text-align: justify}
+.width-320                  {position: absolute; left:0; top: 0px; width: 290px; max-width: 300px;}
+.directorWrap               {display: table;}
+.director                   {display: table-cell; width: 380px; padding: 20px; border-left: 15px solid #fff}
+.font18                     {font-size: 18px; line-height: 26px}
+.corners10                  {border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+.clear                      {width: 100%; clear: both}
+.figure                     {padding: 4px; border: 1px solid #ccc; float: right;}
+.figure img                 {float: right}
+img                         {max-width: 100%; height: auto}
+.rightImg                   {float: right;width: 35%; margin: 20px 0 0 20px; height: auto}
+.leftImg                    { margin: 5px 20px 0 0; height: auto}
+.centerText                 {text-align: center}
+.clear                      {clear: both}
+
+
+
+/*---------------------------------------HEADER------------------------------------*/
+.header                  {position: absolute; width: 100%; min-height: 125px; border-bottom: 1px solid #ccc; left: 0; top: 0;}
+.logo                    {position: absolute; left: 0; top: 10px; font-size: 25px; width: 486px; max-width: 100%; height: auto}
+.contact                 {position: absolute; right: 0; top: 0; text-align: right; padding: 18px 7px 15px 0}
+.contact__p              {font-size: 15px; padding: 0 20px 0 0;}
+.contact a               {text-decoration: none}
+.contact a:hover               {text-decoration: underline}
+.contact__p--geo         {background-repeat: no-repeat !important;  background-position: right top !important; background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wgARCAATAA0DAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGCP/EABgBAQADAQAAAAAAAAAAAAAAAAEAAgME/9oADAMBAAIQAxAAAADQGvU7KnFW4Fws65//xAAlEAABBAIBAwQDAAAAAAAAAAACAQMEBRESBgAhIgcQMXMTFjP/2gAIAQEAAT8Am3IXsCBe3bFtbvXTcmfCqYdmsGPAgsKmSyhhu9qYKuVVdiXGoj1W+oTfCn0hypljb0k+HHsqt+R5ymmnd8tOEvckTRFEi8vPCquvUOooq22suI8orq2TTgb13TnPZA2gZUlJ9vyTCK0Zqv1uj1wOH+xFZcvsI3a7VsYDDwfxgtbfhyi/BHubq/YidepHG6vktRXs2kRJDbdlF1TYh7G6gGORVMiQGQkPwSEqL7f/xAAaEQADAAMBAAAAAAAAAAAAAAAAASECEBIR/9oACAECAQE/AFIjjorqG/IYvX//xAAfEQEAAQQBBQAAAAAAAAAAAAABAAIREiExAxATIkH/2gAIAQMBAT8ADFaadWniz2aZdTKnnhlbj6nydNRbdv/Z');}
+.contact__p--tel         {background-repeat: no-repeat !important;  background-position: right top !important; background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwQDAwQEAwQFBAQFBgoHBgYGBg0JCggKDw0QEA8NDw4RExgUERIXEg4PFRwVFxkZGxsbEBQdHx0aHxgaGxr/2wBDAQQFBQYFBgwHBwwaEQ8RGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhr/wgARCAASAA0DAREAAhEBAxEB/8QAFgAAAwAAAAAAAAAAAAAAAAAABgcI/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQC/9oADAMBAAIQAxAAAACgmsfgxptaSbOCrJzO93//xAAmEAACAwABAwIHAQAAAAAAAAACAwEEBQYAESESIgcIEEFCYmNx/9oACAEBAAE/AMGGI0+K79JFi5zfX2L6NSCPwdJbyW9ZyRdgBMQqQGPuHaI95fTlGI7B5aqallOaGhpRpYd1490I05CVvqN/nZDzH7yf5eiJxuePzr+llfEl2Ri6deVursU+RRYrsifTIEztMkJAYl/gz2iC65HQq6eBpVNKsm5VbXOGJeuDAvHfyM+J6+XTHzua0uRO5lQq8idVepNc9NA2iSHY/YEsifTHX//EABwRAAICAgMAAAAAAAAAAAAAAAABAkEQMRESIf/aAAgBAgEBPwB2qwnyjraI7J+aP//EACARAAEDAgcAAAAAAAAAAAAAAAIAAREDIRASMUFxseH/2gAIAQMBAT8ALQh2aMBLMPfHienLSF0FiZV3cYhf/9k=')}
+.contact__p--mail        {background-repeat: no-repeat !important;  background-position: right 6px !important; background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAALAA0DAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABQYHCP/EABgBAAIDAAAAAAAAAAAAAAAAAAIDAQQF/9oADAMBAAIQAxAAAADSVnThRvBm1Lkv/8QAJhAAAAUDAwMFAAAAAAAAAAAAAQIDBAUGBxIAEzEIFDIRFiEiQv/aAAgBAQABPwCjrD0xQ9IQTmQt2NdQ8nHNlmjhpmrIN3KiRR2V/U4ZpmMPwt+OD66wrKs7doUc/VYoRMlMC9OtHQzhVJs0TT2NtIDAYBVMGZslB5HgADUH1Q3Ri4SOZNaucotm7ZJFJPYR+pClAADw1dW69WXRGM90zS0v2O722ZCE288c/AA5wLr/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIREjEh/9oACAECAQE/ANN+J0QlqzEe0KKXD//EABsRAAIDAQEBAAAAAAAAAAAAAAECAAMREzJR/9oACAEDAQE/ADazEhWzJTZ00fJxrJ0iJWieRP/Z')}
+.contact__p--f           {background-repeat: no-repeat !important;  background-position: right 3px !important; background:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wgARCAANAA0DAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABQYHCP/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBP/aAAwDAQACEAMQAAAA0BbZHa6WAAW1/8QAJhAAAQQBBAIABwAAAAAAAAAAAgEDBAYFAAcTIRESCBQVMTNDgv/aAAgBAQABPwDNP7e1H4a4V7slar87NTIA8D2QxySCmTTaIwFwkT27Ue1VU1abc89QK1n6+lfwr05ySEoKtGciNeQBghB1DRPZweQu08j30urhvszX6FltqHqcE5IUF3FBkjmIP61BHeLjXv8ArWPyTe9FEr+LOL9DCrQmoImB8/zPs2CKfjwPp+L7d6//xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIREiEx/9oACAECAQE/AOuVEV6jHdEVTZ//xAAdEQABBAIDAAAAAAAAAAAAAAABAAIDIRETIlFx/9oACAEDAQE/AObpS0GlG2yDfqEGXbMoDWSe1//Z')}
+
+
+/*-------------------------------------MENU 1 PAGE----------------------------------------*/
+.mainBut                    {width: 100%; display: flex; display: -webkit-flex; flex-direction: column; font-size: 20px; position: absolute; cursor: pointer; text-decoration: none; z-index: 99; left: 0; top:0; text-align: center; line-height: 50px; border-bottom: 10px solid #fff; color: #fff; height: 60px}
+.slidersBlock               {display: flex; display: -webkit-flex; width: 100%; height: 100%; padding-top: 100px;}
+.news                       {top: auto; bottom:0 !important; border-bottom: 0; border-top: 10px solid #fff}
+.pupils,.teachers           {width: 50%; z-index: 999; right: 0; left: auto; border-right: 1px solid #fff}
+.pupils:hover .teachers     {z-index: -1}
+.teachers                   {top: 60px}
+.slider--25                 {float: left; width: 25%; margin: 5px;  overflow: hidden; position: relative; height: 100%;}
+.slider--50                 {float: left; width: 50%; margin: 5px;  overflow: hidden; position: relative; height: 100%;}
+.slider--50__25             {float: left; position: absolute; left: 0; top: 0; width: 50%; height: 120px; border-right: 10px solid #fff; overflow: hidden; z-index: 99; border-bottom: 10px solid #fff}
+.slideshow                  {float: left; position: relative; width: 100%; height: 100%; }
+.slideshow--small           {float: left; padding-right: 11px; border-right: 11px; width: 99%}
+
+.mainBut:hover              {height: 100%; border-bottom: 0}
+.mainBut span               {position: absolute; width: 100%; left: 0; top: 0; background: #bb3732; text-align: center; z-index: 999; border-bottom: 10px solid #fff}
+.mainBut:hover span,.news:hover  {border: 0;}
+.mainBut li                 {cursor: pointer; color: #fff; text-decoration: none}
+.mainBut li:hover ,.mainBut span:hover       {text-transform: uppercase}
+.mainBut__list              {height: 100%; width: 100%; display: none}
+.mainBut:hover .mainBut__list{min-height: 100%; height: 100%; display: flex; display: -webkit-flex; flex-direction: column; justify-content: space-between; padding-top: 50px; background: rgba(65,107,101,0.9); }
+.mainBut__list li           {width: 100%; border-top: 1px solid #fff; line-height: 28px; padding: 10px 5px 0; font-size: 20px; height: 100%;}
+.news .mainBut__list li     {border-top: 0; border-bottom: 1px solid #fff}
+.mainBut__list a, .mainBut__list a:hover            {border: none; text-decoration: none;background: none}
+.news:hover span            {bottom: 0; top: auto; border-top: 1px solid #fff}
+.news:hover .mainBut__list  {padding: 0 0 50px 0}
+.teachers:hover span        {border-bottom: 10px solid #fff}
+
+.menu--secondary            {position: absolute; }
+.menu--secondary .slider--25, .menu--secondary .slider--50, .menu--secondary .slider--50__25{overflow: visible; height: 50px}
+.menu--secondary .mainBut:hover .mainBut__list{background:none; margin-bottom: 20px; height: auto; color: #fff}
+.menu--secondary .mainBut__list li{ min-height: 52px; display: block; background: rgba(65,107,101,0.9);}
+.menu--secondary .pupils    {left: 0}
+.menu--secondary .teachers  {top: 0; border-left: 10px solid #fff}
+.menu--secondary .slidesmall, .menu--secondary .slidebig {display: none}
+.menu--secondary .pupils:hover .teachers     {z-index: 9999; top:0; right: 0; left: auto}
+.menu--secondary .news, .menu--secondary .news:hover  {border: 0; margin-top: 0; top: 0}
+
+/*-------------------------------------------------MENU-------------------------------------------*/
+.menu                    {float: right; }
+.menu li                 {float: left; cursor:pointer; width: 60px; margin: 0 5px; padding: 18px 0 22px 0; text-align: center; overflow: hidden}
+.menu a                  {text-decoration: none}
+.menu .menu__active, .menu .menu__active:hover      {background: #bb3732; position: relative; color: #fff; overflow: hidden}
+.menu__active:before     {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 0; border-left: 30px solid transparent;
+    border-right: 30px solid transparent; border-bottom: 20px solid #fff;}
+.menu__icon              {display: block; margin: 0 auto 5px auto; width: 49px; height: 47px; background: url(https://picua.org/images/2019/12/05/6a61e639dd1edffdca10f53d949ba5a7.jpg) no-repeat left top; }
+.menu li:hover a         {color: #bb3732; }
+.menu li:hover .menu__icon{background: url("../img/menu-ic-hov.jpg") no-repeat left top; }
+.menu__active a, .menu .menu__active:hover a     {color: #fff}
+.menu__active .menu__icon, .menu .menu__active:hover .menu__icon{background: url("../img/menu-ic-ac.jpg") no-repeat left top; color: #fff}
+.menu__active .menu__icon--news, .menu .menu__active:hover .menu__icon--news  {background-position: left bottom}
+.menu__active .menu__icon--pupil,.menu .menu__active:hover .menu__icon--pupil {background-position: right top}
+.menu__active .menu__icon--teachers, .menu .menu__active:hover .menu__icon--teachers  {background-position: right bottom}
+.menu__icon--news, .menu li:hover .menu__icon--news        {margin: 0 auto 1px auto; height: 51px; background-position: left bottom}
+.menu__icon--pupil, .menu li:hover .menu__icon--pupil       {width: 54px; margin: 0 auto 5px auto; background-position: right top;}
+.menu__icon--teachers,.menu li:hover .menu__icon--teachers    {margin-bottom: 1px; width: 54px; height: 51px; background-position: right bottom;}
+
+
+
+
+/*----------------------------------------IMAGES ANIMATION ---------------------------------------------------*/
+.slideshowfirst li, .slidesmall li, .slidebig li  {display: block; width: 100%;height: 100%;
+    position: absolute; top: 0; left: 0;
+    background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;z-index: 1;
+    -webkit-animation: imageAnimation 13s linear infinite 0s;  -moz-animation: imageAnimation 24s linear infinite 0s;
+    -o-animation: imageAnimation 24s linear infinite 0s; -ms-animation: imageAnimation 24s linear infinite 0s;
+    animation: imageAnimation 24s linear infinite 0s; background-image: url(http://sch2.ltedu.vn.ua/media/image/fon/f1.JPG);-webkit-animation-delay: 0s;  -moz-anmation-delay: 0s; -o-animation-delay: 0s; -ms-animation-delay: 0s; animation-delay: 0s;}
+.slidesmall li           {background-image: url(https://picua.org/images/2019/12/05/4b09b2917abad1ccbd88a558221cda4d.jpg); animation-duration: 28s}
+.slidebig li     {background-image: url(https://picua.org/images/2019/12/05/455d26d5af91769a3683e9863c5daae6.jpg); background-position: center bottom; animation-duration: 14s}
+
+/* -------------------------Animation for the slideshow images -------------------------------*/
+.slideshow li span        {width: 100%;height: 100%; position: absolute; top: 0; left: 0; color: transparent;
+    background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;
+    opacity: 0; z-index: 0; -webkit-backface-visibility: hidden;
+    -webkit-animation: imageA 36s linear infinite 0s;  -moz-animation: imageA 36s linear infinite 0s;
+    -o-animation: imageA 36s linear infinite 0s; -ms-animation: imageA 36s linear infinite 0s;
+    animation: imageA 36s linear infinite 0s;}
+.slideshow li:nth-child(1) span {background-image: url(https://picua.org/images/2019/12/09/e0b173de7ab54fd50f8d8361b92bfb53.jpg)}
+.slideshow li:nth-child(2) span {background-image:  url(https://picua.org/images/2019/12/09/880cde4545aa340024663c79052fec0f.jpg);  -webkit-animation-delay: 6s;
+    -moz-anmation-delay: 6s; -o-animation-delay: 6s; -ms-animation-delay: 6s; animation-delay: 6s;}
+.slideshow li:nth-child(3) span {background-image: url(http://sch2.ltedu.vn.ua/media/image/flag.jpg); -webkit-animation-delay: 12s; -moz-animation-delay: 12s;
+    -o-animation-delay: 12s; -ms-animation-delay: 12s; animation-delay: 12s;}
+.slideshow li:nth-child(4) span {background-image: url(https://picua.org/images/2019/12/09/2c8bd2468fccd01cfed6ccf29af83a28.jpg);-webkit-animation-delay: 18s; -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;-ms-animation-delay: 18s; animation-delay: 18s;}
+.slideshow li:nth-child(5) span {background-image: url(https://picua.org/images/2019/12/09/1566a6d01c1055405ca769ac3c89a65c.jpg); -webkit-animation-delay: 24s; -moz-animation-delay: 24s;
+    -o-animation-delay: 24s; -ms-animation-delay: 24s; animation-delay: 24s;}
+.slideshow li:nth-child(6) span {background-image: url(https://picua.org/images/2019/12/09/ca0eecc94ad06784c59fb226d8478c54.jpg); -webkit-animation-delay: 30s; -moz-animation-delay: 30s;
+    -o-animation-delay: 30s; -ms-animation-delay: 30s; animation-delay: 30s;}
+.slideshow li:nth-child(2) div {-webkit-animation-delay: 6s; -moz-animation-delay: 6s; -o-animation-delay: 6s;  -ms-animation-delay: 6s; animation-delay: 6s;}
+.slideshow li:nth-child(3) div {-webkit-animation-delay: 12s; -moz-animation-delay: 12s; -o-animation-delay: 12s; -ms-animation-delay: 12s; animation-delay: 12s;}
+.slideshow li:nth-child(4) div {-webkit-animation-delay: 18s; -moz-animation-delay: 18s; -o-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s;}
+.slideshow li:nth-child(5) div {-webkit-animation-delay: 24s; -moz-animation-delay: 24s; -o-animation-delay: 24s; -ms-animation-delay: 24s; animation-delay: 24s;}
+.slideshow li:nth-child(6) div {-webkit-animation-delay: 30s; -moz-animation-delay: 30s; -o-animation-delay: 30s; -ms-animation-delay: 30s; animation-delay: 30s;}
+
+@-webkit-keyframes imageA {
+    0%      {opacity: 0; -webkit-animation-timing-function: ease-in;}
+    8%      {opacity: 1; -webkit-transform: scale(1.05); -webkit-animation-timing-function: ease-out;}
+    17%     {opacity: 1; -webkit-transform: scale(1.1);}
+    25%     {opacity: 0; -webkit-transform: scale(1.1);}
+    100%    {opacity: 0}}
+
+@-moz-keyframes imageA {
+    0%      {opacity: 0; -moz-animation-timing-function: ease-in;}
+    8%      {opacity: 1; -moz-transform: scale(1.05); -moz-animation-timing-function: ease-out;}
+    17%     {opacity: 1; -moz-transform: scale(1.1);}
+    25%     {opacity: 0; -moz-transform: scale(1.1);}
+    100%    {opacity: 0}}
+
+@-o-keyframes imageA {
+    0%      {opacity: 0; -o-animation-timing-function: ease-in;}
+    8%      {opacity: 1; -o-transform: scale(1.05); -o-animation-timing-function: ease-out;}
+    17%     {opacity: 1; -o-transform: scale(1.1);}
+    25%     {opacity: 0; -o-transform: scale(1.1);}
+    100%    {opacity: 0}}
+
+@-ms-keyframes imageA {
+    0%      {opacity: 0; -ms-animation-timing-function: ease-in;}
+    8%      {opacity: 1; -ms-transform: scale(1.05); -ms-animation-timing-function: ease-out;}
+    17%     {opacity: 1; -ms-transform: scale(1.1);}
+    25%     {opacity: 0; -ms-transform: scale(1.1);}
+    100%    {opacity: 0}
+}
+@keyframes imageA {
+    0%      {opacity: 0; animation-timing-function: ease-in;}
+    8%      {opacity: 1; transform: scale(1.05); animation-timing-function: ease-out;}
+    17%     {opacity: 1; transform: scale(1.1);}
+    25%     {opacity: 0; transform: scale(1.1);}
+    100%    {opacity: 0}}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .slideshow li {opacity: 1;}
+
+
+@-webkit-keyframes imageAnimation {
+    0%      {-webkit-transform: scale(1.0);}
+    50%     {-webkit-transform: scale(1.1);  -webkit-animation-timing-function: ease-out;}
+    100%    {-webkit-transform: scale(1.0);}}
+@-moz-keyframes imageAnimation {
+    0%      {-webkit-transform: scale(1.0);}
+    50%     {-webkit-transform: scale(1.1);  -webkit-animation-timing-function: ease-out;}
+    100%    {-webkit-transform: scale(1.0);}}
+@-o-keyframes imageAnimation {
+    0%      {-webkit-transform: scale(1.0);}
+    50%     {-webkit-transform: scale(1.1);  -webkit-animation-timing-function: ease-out;}
+    100%    {-webkit-transform: scale(1.0);}}
+@-ms-keyframes imageAnimation {
+    0%      {-webkit-transform: scale(1.0);}
+    50%     {-webkit-transform: scale(1.1);  -webkit-animation-timing-function: ease-out;}
+    100%    {-webkit-transform: scale(1.0);}}
+@keyframes imageAnimation {
+    50%     {-webkit-transform: scale(1.1);  -webkit-animation-timing-function: ease-out;}
+    100%    {-webkit-transform: scale(1.0);}}
+/*.no-cssanimations .slideshow li span{opacity: 1;}
+
+
+/*-------------------------------------------------Buttons animation -----------------------------------*/
+@-webkit-keyframes slideInDown {
+    from {-webkit-transform: translate3d(0, -100%, 0);  transform: translate3d(0, -100%, 0); visibility: visible;}
+    to {-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}}
+@keyframes slideInDown {
+    from {-webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); visibility: visible;}
+    to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }}
+.slideInDown { -webkit-animation-name: slideInDown;  animation-name: slideInDown; animation-duration: 1.5s;}
+
+@-webkit-keyframes slideInUp {
+    from {-webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); visibility: visible;}
+    to   {-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}}
+@keyframes slideInUp         {
+    from {-webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); visibility: visible;}
+    to   {-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }}
+.slideInUp { -webkit-animation-name: slideInUp; animation-name: slideInUp; animation-duration: 1.5s;}
+
+
+    /*--------------------------------------------------ABOUT--------------------------------------------------*/
+.submenulink    {display: block; min-height:60px; min-width: 11%; text-decoration: none; font-size: 18px; padding: 6px; text-align: center; border: 1px solid #fff; background: darkseagreen; background: rgba(65,107,101,0.9); color: #fff}
+.submenulink:hover {background: #bb3732; color: #fff}
+.oklist li, .danger--list li      {padding-left: 30px; position: relative}
+.ok             {position: absolute; left: 0; top: 2px; padding: 0 4px; height: 20px; border-radius: 2px; margin-right: 10px; font-size: 15px; line-height: 20px; background: #ec6d36; color: #fff}
+.danger--list .ok{border-radius: 2px; background: crimson;}
+.But            {float: right; margin: 0 10px;}
+.service        {flex-wrap: wrap; text-align: center}
+.service h4     {text-align: center}
+.service  ul    {display: flex;flex-wrap: nowrap}
+.service li     { text-align: center; margin: 5px; padding: 25px 15px 15px 15px; max-width: 250px; color: #fff; font-size: 20px; border-radius: 4px}
+.service__img   {display: block; margin: 0 auto 10px auto; width: 80px; height: 52px; background: url(https://picua.org/images/2019/12/05/aca1afa81ac856f656ac43e26eb7955b.png) left top;}
+.service__img--2{background-position: center top}
+.service__img--3{background-position: right top}
+.service__img--4{background-position: left bottom}
+.service__img--5{background-position: center bottom}
+.himn           {margin: 10px 0 30px 0; text-align: center; padding: 20px}
+.herbImg        {margin: 5px 10px 0 0; width: 117px; height: 122px}
+.slick-prev, .slick-next {position: absolute; top: 37%; width: 0;height: 0; font-size: 0; color: transparent; border: 0; outline: none}
+.slick-next     {right: -40px; left: auto}
+.slick-prev:before, .slick-next:before  {content: "«"; position: absolute; left: -40px; top: 0; width: 40px; height: 40px; line-height: 47px; font-size: 70px; color: #b2d233; cursor: pointer}
+.slick-next:before {content: "»"}
+.slick-arrow:active, .slick-next:active, .slick-prev:active   {outline: none !important; border: none !important}
+.newSchoolslider {width: 958px; max-width: 90%; height: 540px !important; margin: 0 auto}
+.newSchoolslider img {width: 100%; height: auto; margin: 0 auto; display: block}
+
+
+
+
+/*--------------------------------    DIRECTION AVARE HOVER     --------------------------------*/
+.da-thumbs            {list-style: none; width: 100%; position: relative; margin-top: 95px; display: -webkit-flex;
+    display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-wrap: wrap; -webkit-justify-content: space-between;
+    -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between;}
+.teacher              {width: 18.5%; background: #fff; color: #fff; position: relative; padding-top: 61px; text-align: center; margin: 10px 5px 15px 5px }
+.teacher--4           {width: 23.5%;}
+.teacher img          {display: block; position: relative; width: 100%; height: auto}
+.da-thumbs li          {overflow: hidden;}
+.da-thumbs li  div     {position: absolute; background: #333; background: rgba(75,75,75,0.8); width: 100%; height: 100%; top: 0; left: -100%; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background: rgba(65,107,101,0.8)}
+.da-thumbs li  div span{display: block; padding: 10px 0; margin: 30px 10px 10px 10px; text-transform: uppercase;
+    font-weight: normal;  color: rgba(255,255,255,0.9);  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.5);box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+    font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;}
+.teacher__name            {position: absolute; text-align: center; left: 0; top: 0; width: 100%; font-size: 18px; height: 60px; border-bottom: 2px solid #fff; z-index: 9; padding: 5px; display: table-cell; background: #aa3442; color: #fff; vertical-align: middle;}
+.teacher__post          {padding: 70px 15px}
+.teacher__post p        {color: #fff; font-size: 16px}
+
+
+
+/*----------------------------------------- PUPILS  --------------------------------------*/
+.pupilFirstBlock    {width: 100%; padding: 10px 10px 5px 10px;}
+.pupilFirstBlock__Img{padding: 0 0 0 30px; max-width: 47%}
+.pupilR             {float: left; width: 100%; padding: 10px 370px 10px 0; text-align: justify; position: relative}
+.pupilR__award      {position: absolute; right: 0; width: 340px; top: 20px; border-radius: 24px; text-align: left; padding: 30px 15px 10px 20px;}
+.crimsonBorder      {font-size: 18px; border: 5px solid crimson; color: crimson; padding: 40px 20px 0 25px; border-radius: 7px;}
+.net                {display: inline-flex;  height: 40px; width: 100%; justify-content: center; overflow: hidden; cursor: pointer}
+.net:hover          {height: auto}
+.net__it            {cursor: pointer; display: inline-block; float: left; border: 2px solid #fff; border-radius: 3px; text-align: center; font-size: 18px; padding: 7px 15px 7px 15px}
+.shedule            {display: table; width: 100%; padding: 10px}
+.shedule__cap       {padding: 10px}
+.shedule__row       {display: table-row}
+.shedule__col       {display: table-cell; width: 200px; max-width: 200px}
+.shedule__cell      {float: left;width: 20%; display: inline-block; text-align: center; border: 1px solid #fff; border-bottom: 2px solid #fff;}
+.danger             {color: #fff; display: table-cell; background: crimson; padding:25px; border-radius: 10px;}
+.rubrikaBlock       {width: 320px; min-width: 320px; margin-right: 20px}
+/*h1                  {margin: 100px auto; text-align: center; color: #fff;}*/
+.row--shedule       {justify-content: center; margin-bottom: 0; padding: 0}
+.day                {display: inline-block; border-radius: 3px; color: #fff; background: #979aa0; text-align: center; width: 100%; padding: 5px; border: 1px solid #fff; border-bottom: 2px}
+.classShedule .row--shedule {display: none}
+.classShedule:hover .row--shedule {display: flex}
+.classShedule:hover .net__it {display: none}
+.classShedule:hover .net__it:first-child {display: block; width: 100%}
+.net .classShedule:hover ~ .classShedule {display: none}
+.row--shedule div .day:first-child  {font-size: 18px; padding: 7px}
+
+/*.shedule--slider .slick-dots li{float: left; background: #979aa0}
+.shedule--slider .slick-next,.shedule--slider .slick-prev {display: none !important;}
+
+#slick-slide-control20:before {content: '1-A'}
+#slick-slide-control21:before  {content: '2-A'}
+
+
+    /*--------- medalistu -------------------------------------------------*/
+.medal {width: 580px; max-width: 100%; margin: 0 auto; padding-bottom: 50px; height: 400px; position: relative}
+.medal__cap         {display: flex; margin-bottom: 25px; width: 100%; justify-content: center; font-size: 18px; text-transform: uppercase}
+.medal__cap span    {margin: 0 4px; padding: 5px 15px 5px 15px;}
+.medal__slider .slick-next,  .medal__slider .slick-prev{display: none !important;}
+.medal__slider__names  {padding: 15px; text-align: center}
+.slick-dots         {position: absolute; left: 0; top: auto; width: 100%; bottom: 75px;}
+.slick-dots li{float: right; width: 54px; position: relative; margin: 2px; cursor: pointer}
+.slick-dots li button, .slick-dots li button:active, .slick-dots li button:visited  {background: #fff; position: relative; cursor: pointer; color: #fff; outline: none; border: none}
+.slick-dots li button:before {position: absolute; left: 0; top: -5px; width: 54px; min-width: 54px; height: 26px; padding: 8px 5px 8px 5px; color: #fff; background: #979aa0}
+.slick-dots .slick-active  button:before {background:  #416b65}
+#slick-slide-control10:before {content: '2018'}
+#slick-slide-control11:before {content: '2017'}
+#slick-slide-control12:before {content: '2016'}
+#slick-slide-control13:before {content: '2015'}
+#slick-slide-control14:before {content: '2014'}
+#slick-slide-control15:before {content: '2013'}
+#slick-slide-control16:before {content: '2012'}
+#slick-slide-control17:before {content: '2011'}
+#slick-slide-control18:before {content: '2010'}
+#slick-slide-control19:before {content: '2009'}
+.ministr .ok {background: #fca33b}
+/*----------                GAZETA     ------------*/
+.rubrika {margin: 5px 0 0 0; text-align: center; cursor: pointer; position: relative}
+.rubrika__content {display: none; width: 1%;   -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;}
+.rubrika:hover .rubrika__content {display: block; background: #fff; color: #6f454f; padding: 5px; text-align: left; text-transform: none;
+   width:100%; -webkit-transition: width 2s ease-in-out; transition: width 2s ease-in-out;  -moz-transition: width 1s ease-in-out;  -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;}
+.rubrika .rubrika__arrow  {display: block; width: 20px; height: 20px; position: absolute; right: 10px; top: 7px; font-size: 34px; font-weight: normal;}
+.rubrika:hover .rubrika__arrow  {color: #fff; background: transparent; -webkit-transform: rotate(90deg); /* Chrome y Safari */
+    -moz-transform: rotate(90deg);  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3); /* Internet Explorer */
+    -o-transform: rotate(90deg); /* Opera */ right: 5px; top: 10px}
+
+.LRshadow,.RLshadow {position: relative; width: 100%; min-width: 300px}
+.LRshadow:after,.RLshadow:after {content: ''; width: 320px; width: 100%; height: 36px; position: absolute; bottom: -36px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWMAAABICAMAAAAUAGSSAAAAUVBMVEUAAAAEBAQEBAQGBgYFBQUFBQUDBAQICAgEBAQFBQYFBQYEBAQFBQUEBQUEBAQCAgIDAwIDAwMBAQEBAQEAAAABAQEAAAEAAAAAAAAAAAAAAAC79/aEAAAAG3RSTlMAAwcFDAoUER0PFyIaKSU0MCw5P1BESldeZnIxGMPoAAAJGklEQVR42tzZi3bSUBBG4ZY7NFaw1tv7P6gzJ39mczI5iEvsIuxFId7t5zhJ6NPH9TzR0lvYY2jdt7L2auttvIPVdTvvxXp9/eSdTkfrs/fFe+t7L31TX4e+Rz+in+f9uthP9aNkv8tX69u39/e3ty+fj8fTp9fXl113OGy2q9V6YZ+ZfZJP/7EzSns4pD/BKdGVGkAxBbZvB6/V+56cF194a1xksQW3HZzhaaBO+mZ/3GdjPZ4M1mUL7Wa73e9Xa+d9Lt2aFFdaKnA1qYSthawFrXArXZ9f6Vrj2W3PLcR6RbGXlKU4fUTleSqeL97OTLvOUMVqGWwZo2fp3ho40xK4C3QZXCa2AStZo8V2cnjzXqAghBLLIilKtyzD6TmoPA8xpX1rT2vOXCXL5N6W1x8Vr33kyZ2Y2ubEMrLIyjYvXlYDujn7wUpTnJpNyy2F6bPp7QdQ15TlOP/k/2vt1ZB90dXkYosrM6tq2nxaw9dySXpXMZ+aTjgPwbm3NJvFsqR5idD8sGpbewiXMi+6GbeCtYxkZJumt0ojCqk3oAYp88lwlqrR1P94Dj6+9vrN41sN79S2jamVbAlceAEmmTKplqsW1s46WHFeSnNKT3eT/pHbuPAKuLpUEG/7TAZtFpakONXRc1fBslQP2qme8wp3cb+46k/A0sV3m3eDeF96XXwRzuEpVGd1V2tsG1t2z/l/reG9b1zvmvNbrxsDjPCuJF75siEuBqs9SsiWOkvrtuDGKYzdUOPeKXBCTsIsYITbG0K+Us5BGqzl7KV26MboCpfhte55815FPH0FwcUvwhBz3Tvq3FOopqqQLbDaCm7rcfXF7Ap4LrYAt9/JYQnjG1tCxFyl9dDDSIcknrBCy1LAdh97IQ+vfczIF2FWBMAIt+7gXIdJvhSkegGXwa3vw+rZla7/RWexfhEmCTeIAcbYk3Hg9ZJ60kFdp7AFl3cNuJWAWH9H+c5viCFGOE0xxMWYdpfrHDZ0y68MWkbXC17u1ZjiuS3hsfH0ECdjewBNwgPdVemgNhrbrLuiwotr6M7oEqIqhFXzjWCnkPM2O0Pde0sd2ZFr4OZ3wGL71qO7nJ+tgNMUN4zja0MMNCXuDaTw6ldh67TsBqelJT3Pdn7Hyol44cQo42w8MA/WGV3fuSXpBiwBzHqI96tnboxva4yzMcz+TIV0S+Q/f6+y7fm1w+TwcgExR2KQEa6+5ukMI+fKWtJ+pOfwLwc+s9gS9xQUtKnZXKNNE1MYM8m0atXjuWFsV9nCOkELL6e3uMGY/Xaoa97fsZRBvgSN4bTsSrsd23qABfxYummOMW7Os5yajrwwtXrxmr7+p+M7s3u4KxqA4yZvmZUHaMCxg8+HNWIpcFJrzm9uHu9C/O1JjxaNilSM47k5P15pcpxw21fA+prX4wyxhDPy7VsyusjyDlqFPJM3066ugXxDaGA5YgXX3cXX5W8vbB8Ehn/EAPohA87VFsf+La7ByrNwSah5Bc/6DuOaknG7xegV5xqSw0Qs3ge81biKGOSL1niB3Y43zfBtEj891Lnu3BjmakkOQrygJrv4hhP6g+QaxkV4+irtke43WvGZ5iTJUTXt2Sxvg/b0Yusz/LhDHOF8hQyi/5pc/Wiu12y/yznblUaCKIhi9sdmEYT1/R92M52ae+Z+OQkRk54tHKIYBI/lTXdPVXTUc9mU/V4Sf+clw7Pk/z+XZOQ10WsZ9JsrE8jF1CUywRKZS6LBZdaavFW8w0e4wp+Daif+9FMkOW5sdUewfcA+j0ClCgHXyKSyvuIu8CKf1KGGNlF2SEfOKghcVKSvNrhhblksSdT9Cf96A/snkbMG1hpXuTVlAi+/DWHAtehyzaqmBgb1i1K9r6OnldNU2t2RFmpgx3gArPvz6O5G1Q/M/c0oXQ8N0h1+hayaDtcnrs/tFwTlYn6UloY1qcIGN+42W0s6h4I0etI4Yd2Wz+pTxk0hbstnyvMGHvKwrxWHB6yJHEMbc7fuLpxduLooJzwxR58WGJwVyfPUExbTA16ON7+vnQ6RF/1Y6gikgS3U3tvwhnUZ1aimxyveg/WHNGE/iOXxu0EX8jFjgN53PeAcWf8dsB3ujBrSGfTJRJNhhkjtG8o+1+spqUMVQxZQAr7bAMm1BeaIObua2F0sUXr6gH4Y9WlFPYyNtxnlwr3w7us3mTKw+1dHgXaLkJyf61G/9s2BaGqf0PhjkzuwHkqdhv3mCJzl6HeBzrOjCoKC+aU7UFmhUK3ZIdB0HGRqkp6p4XBficT0IdAu0ry1s+0WoTxl2itPaR86okVNRHxFTVtSwIHeSa2T3alBVyd6eTYnl6yr6qQ87YPM59hMlQa8ATG3S9BHs7TzS+h6tTErZJ+PyZbW/BiwYZ276wBfuSMz7xWvIaYJwVYljebqdGk+zG9w/kWE412s6MLYWamgDfV+D7nJlxFDGy5OH9Nm4cOfkhIT5pi7E2SnWTd7tS2nUImAsVZChPKmX+9KUHt2B1BCkKbob7EHuvNs92e/0sGQ+BGQoO9Ib3rEVAWk0SFGIQI6oAxvP6CLjbOVJxwViODtT24TOp32GOvFmlrj+CWTTGejKd7mKY2cQz1auLBjvp7+EWZFbx3qAArTJmAMWYd/lGsqMpVnXF5kxlPXA4AAzIjse1LdQ9Im7R5X4qiN8SpCnJSzIeqziSbEID+tU+lmuSrnlQ3PCM+6NPDRrUa2N2SE4F90fZLj07y+OoZkCXLGNhR8hDineYyAW5yQ2hOIMaGAnGWub4MvfQN9Byb7o5DT1PK5UYZaqlLlm6Nd1CfDuIGYUo/mXFrsJJTJ3LWdJqBLir/hfrtq/aPJ1RStB9mr9zEsiIwRuqlU2xZVttaWK+ltm8mCENwWQfvUMai9YxUrKlql9ree0ef/DrCoKyPUmxfK1SIb7XoF42tO32/MFKA9nCRTfiRfEs+9B7tilRFEmcfLdE8oreD2tBPVse4q1X4b+g+5Euzkhcd7Jfwe+qcvSao73OnyYMEmwnjNHd71gfXO7Ze5307lX/IoVY5KBYgNuYRofubaCYsmFn3fYOvFG1guBcKvour6hAkcxd58VOnJX0Foh9KYfFRR7Bf/ehfcfS2xwoAYtsMkAAAAASUVORK5CYII=') no-repeat right top;right: 29px; }
+.LRshadow:after {background-position:  left bottom;bottom:  -36px;left:  26px}
+.LRshadow,.RLshadow      {    -o-transition: transform 0.7s linear; -moz-transition: transform 0.7s linear; -webkit-transition: transform 0.7s linear; transition: transform 0.7s linear;}
+.grad{
+    padding:20px;
+    background: #c0dfc3;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    background: rgb(95,158,160); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(95,158,160,1) 0%, rgba(95,158,160,1) 2%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 65%, rgba(95,158,160,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(95,158,160,1) 0%,rgba(95,158,160,1) 2%,rgba(255,255,255,1) 34%,rgba(255,255,255,1) 65%,rgba(95,158,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(95,158,160,1) 0%,rgba(95,158,160,1) 2%,rgba(255,255,255,1) 34%,rgba(255,255,255,1) 65%,rgba(95,158,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f9ea0', endColorstr='#5f9ea0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+
+
+/*----------------------------------------------   FOOTER      --------------------------------------------*/
+.footer         {position: relative; border-top: 1px solid #ccc; margin-top: 50px; height: 125px}
+/*--------------------------------------COLORS -------------------------------------*/
+.bordoBg        {background: #91143c; color: #fff; opacity: 0.9}
+.brawnBg        {background: #bb3732; color: #fff}
+.redBg          {background: #aa3442; color: #fff}
+.yellowBg       {background: #fca33b; color: #fff}
+.violetBg       {background: #6f454f; color: #fff}
+.greenBg        {background: #416b65; color: #fff}
+.orangeBg       {background: #ec6d36; color: #fff}
+.blueBg         {background: #5e9ea0; color: #fff}
+.darkblueBg     {background: #38586f; color: #fff}
+.greyBg         {background: #979aa0 !important; color: #fff}
+.bordo          {color: #821f34 !important;}
+.yellow         {color: #fca33b !important;}
+.violet         {color: #6f454f !important;}
+.green          {color: #416b65 !important;}
+.orange         {color: #ec6d36 !important;}
+.blue           {color: #5e9ea0 !important;}
+.white          {color: #fff}
+.brawn          {color: #bb3732;}
+.crimson        {color: crimson}
+.row            {display: flex; display: -webkit-flex; justify-content: space-between; width: 100%; align-content: baseline; margin: 0 0 40px 0}
+.bordoBg p, .brawnBg p, .redBg p, .yellowBg p, .violetBg p, .greenBg p, .orangeBg p, .blueBg p, .darkblueBg p, .greyBg p {color: #fff}
+
+
+/*-------------------------------------------    MEDIA     --------------------------*/
+.hide {display: none !important}
+.menu__icon              {background-image: url(https://picua.org/images/2019/12/05/6a61e639dd1edffdca10f53d949ba5a7.jpg);}
+.menu li:hover .menu__icon{background-image: url(https://picua.org/images/2019/12/05/24a391503c31e44e2788ad946d211d86.jpg);}
+.menu__active .menu__icon, .menu .menu__active:hover .menu__icon{background-image: url(https://picua.org/images/2019/12/05/3c99d46935a5c2b1b981550c375beae3.jpg);}
+.service__img{background-image: url(https://picua.org/images/2019/12/05/85fffde02fb4550afc5d5f3241c01f5f.png);}
+.logo {cursor: pointer}
+.submenu     {align-content: stretch !important; margin-top: 104px; background: rgba(65,107,101,0.9)}
+.newSchoolslider .slick-list{height:  545px !important;}
+body .slick-vertical .slick-slide, .slider {height: 545px !important; background: #fff}
+
+@media screen and (max-width: 1200px){
+    .teacher {width: 31%; margin: 25px 1% 0 1%;}
+    .teacher__post {padding: 70px 10px;}
+    .centering {width: 95%}
+    .net__it   {padding: 7px}
+}
+
+@media screen and (max-width: 920px){
+    .centering       {padding-top: 0}
+    .header{border-bottom: 0; position: static; min-height: 0}
+    .row         {display: block}
+    .l-row       {display: flex}
+    .pupilFirstBlock{clear: both; padding-top: 50px}
+    .slidersBlock       {padding-top: 10px}
+    .slider--50, .slidebig,  .width50 {width: 100%}
+    .submenu {display: none}
+    .teacher__name {font-size: 16px}
+    .da-thumbs li div span{font-size: 15px; margin: 20px 0 10px 0}
+    .logo   {position: static; display: block; margin: 5px auto 15px auto}
+    .menu   {float: right;  width: 100%; border-top: 1px solid #ccc;}
+    .menu li {width: 24%; margin: 0.5% 0.5% 0 0.5%; padding: 7px 0 2px 0; background: #426b65}
+    .menu__active:before {display: none}
+    .aboutPage     {padding-top: 110px}
+    .menu__icon, .menu li:hover .menu__icon {background-image: url(https://picua.org/images/2019/12/05/3b707cf161d5956eaef694c01df3830a.jpg);}
+    .menu a, .menu li:hover a    {color: #fff}
+    .l-hide    {display: none}
+    .l-hide ul li {background: none}
+    .service li {padding: 14px 5px}
+    .header .menu {display: block !important}
+    .footer, .footer .contact {display: block !important;}
+    .footer   {margin-top: 25px}
+    .flag       {width: 100%; margin:  0 0 20px 0}
+    .slidebig li {background-position: right bottom}
+    .width48     {width: 100%}
+    .row h2, .width48 h2,.width48 h6  {text-align: center}
+    .pupilR       {padding: 0}
+    .pupilR__award, .crimsonBorder {position: static; width: 100%; max-width: 600px; margin: 30px auto}
+
+}
+@media screen and (max-width: 730px){
+    .rubrikaBlock   {display: none}
+    h1{font-size: 24px} h2 {font-size: 20px}
+    .service ul{flex-wrap: wrap; } .service ul li {margin: 5px auto; width: 52%; min-width: 250px; padding: 15px; max-width: 52%}
+    .teacher__post p {margin-bottom: 10px}
+    .teacher__post i {font-size: 15px}
+    .width-320-Wrap {text-align: left; padding: 10px 0 10px 310px;}
+    .centering  {width: 94%}
+    .contact    {margin-right: 0}
+    .l-row        {display: block}
+    .width30     {width: 100%}
+    /*.himn{padding: 20px 10px 20px 10px;  width: 270px;}*/}
+@media screen and (max-width: 680px){
+    .m-hide      {display: none}
+    .herbImg     {width: 117px; height: 112px; padding: 0}
+    .width-320-Wrap,  .width-320   {position: static; width: 100%; max-width: 100%;}
+    .width-320-Wrap   {padding: 20px}
+    .width75, .width25   {width: 100%; text-align: left}
+    .teacher{width: 47.5%; margin: 25px 1% 0 1%;}
+    .rightImg{width: 100%; margin: 0 0 20px 0}
+}
+@media screen and (max-width: 440px){   .teacher{width: 259px; margin: 25px auto 0 auto}
+}
