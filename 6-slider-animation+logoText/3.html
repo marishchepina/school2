@@ -8,28 +8,51 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <style type="text/css" >
-        html, body {height: 100%; min-height: 100%}
-        * {margin: 0; padding: 0;  box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
-        body                      {font: 16px/24px "Roboto Condensed" , Tahoma, arial; color: #5d5145; overflow-y: scroll;  overflow-x: hidden;}
-        a                         {color: #5d5145; text-decoration: underline}
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            min-height: 100%
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        body {
+            font: 16px/24px "Roboto Condensed", Tahoma, arial;
+            color: #5d5145;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #5d5145;
+            text-decoration: underline
+        }
 
         /*--------------------------------------LOGO -------------------------------------*/
 
-        .logo__left__smalltext    {    width: 100%;
+        .logo__left__smalltext {
+            width: 100%;
             color: #821f34;
             font-size: 21px;
             line-height: 38px;
             padding-bottom: 5px;
             font-weight: normal;
-            }
-        .logo__bigtext            {     width: 100%;
+        }
+
+        .logo__bigtext {
+            width: 100%;
             font-family: 'Russo One', sans-serif;
             font-size: 42px;
             color: #363846;
             line-height: 36px;
-            text-align: left;}
-
+            text-align: left;
+        }
 
         /*-------------------------------------MENU----------------------------------------*/
 
@@ -53,15 +76,19 @@
             animation: imageAnimation 36s linear infinite 0s;
         }
 
-        .slideshow li:nth-child(1) span { background-image: url(img/big1.jpg) }
+        .slideshow li:nth-child(1) span {
+            background-image: url(img/big1.jpg)
+        }
+
         .slideshow li:nth-child(2) span {
-            background-image:  url(img/big2.jpg);
+            background-image: url(img/big2.jpg);
             -webkit-animation-delay: 6s;
             -moz-animation-delay: 6s;
             -o-animation-delay: 6s;
             -ms-animation-delay: 6s;
             animation-delay: 6s;
         }
+
         .slideshow li:nth-child(3) span {
             background-image: url(img/big3.jpg);
             -webkit-animation-delay: 12s;
@@ -70,6 +97,7 @@
             -ms-animation-delay: 12s;
             animation-delay: 12s;
         }
+
         .slideshow li:nth-child(4) span {
             background-image: url(https://24.media.tumblr.com/0df0b55a4615378cf593241bad80a7da/tumblr_n0hpwpZrVc1st5lhmo1_1280.jpg);
             -webkit-animation-delay: 18s;
@@ -78,6 +106,7 @@
             -ms-animation-delay: 18s;
             animation-delay: 18s;
         }
+
         .slideshow li:nth-child(5) span {
             background-image: url(https://24.media.tumblr.com/b94dbb2a392198d5cc39c19959598229/tumblr_n0hpthN8VH1st5lhmo1_1280.jpg);
             -webkit-animation-delay: 24s;
@@ -86,6 +115,7 @@
             -ms-animation-delay: 24s;
             animation-delay: 24s;
         }
+
         .slideshow li:nth-child(6) span {
             background-image: url(https://31.media.tumblr.com/67d222ee577fc35faca83f0e08efc48e/tumblr_mzzqt7wyEU1st5lhmo1_1280.jpg);
             -webkit-animation-delay: 30s;
@@ -94,6 +124,7 @@
             -ms-animation-delay: 30s;
             animation-delay: 30s;
         }
+
         .slideshow li:nth-child(2) div {
             -webkit-animation-delay: 6s;
             -moz-animation-delay: 6s;
@@ -101,6 +132,7 @@
             -ms-animation-delay: 6s;
             animation-delay: 6s;
         }
+
         .slideshow li:nth-child(3) div {
             -webkit-animation-delay: 12s;
             -moz-animation-delay: 12s;
@@ -108,6 +140,7 @@
             -ms-animation-delay: 12s;
             animation-delay: 12s;
         }
+
         .slideshow li:nth-child(4) div {
             -webkit-animation-delay: 18s;
             -moz-animation-delay: 18s;
@@ -115,6 +148,7 @@
             -ms-animation-delay: 18s;
             animation-delay: 18s;
         }
+
         .slideshow li:nth-child(5) div {
             -webkit-animation-delay: 24s;
             -moz-animation-delay: 24s;
@@ -122,6 +156,7 @@
             -ms-animation-delay: 24s;
             animation-delay: 24s;
         }
+
         .slideshow li:nth-child(6) div {
             -webkit-animation-delay: 30s;
             -moz-animation-delay: 30s;
@@ -129,69 +164,279 @@
             -ms-animation-delay: 30s;
             animation-delay: 30s;
         }
+
         /* -------------------------Animation for the slideshow images -------------------------------*/
         @-webkit-keyframes imageAnimation {
-            0%      {opacity: 0; -webkit-animation-timing-function: ease-in;}
-            8%      {opacity: 1; -webkit-transform: scale(1.05); -webkit-animation-timing-function: ease-out;}
-            17%     {opacity: 1; -webkit-transform: scale(1.1);}
-            25%     {opacity: 0; -webkit-transform: scale(1.1);}
-            100%    {opacity: 0}}
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                -webkit-transform: scale(1.05);
+                -webkit-animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1;
+                -webkit-transform: scale(1.1);
+            }
+            25% {
+                opacity: 0;
+                -webkit-transform: scale(1.1);
+            }
+            100% {
+                opacity: 0
+            }
+        }
 
         @-moz-keyframes imageAnimation {
-            0%      {opacity: 0; -moz-animation-timing-function: ease-in;}
-            8%      {opacity: 1; -moz-transform: scale(1.05); -moz-animation-timing-function: ease-out;}
-            17%     {opacity: 1; -moz-transform: scale(1.1);}
-            25%     {opacity: 0; -moz-transform: scale(1.1);}
-            100%    {opacity: 0}}
+            0% {
+                opacity: 0;
+                -moz-animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                -moz-transform: scale(1.05);
+                -moz-animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1;
+                -moz-transform: scale(1.1);
+            }
+            25% {
+                opacity: 0;
+                -moz-transform: scale(1.1);
+            }
+            100% {
+                opacity: 0
+            }
+        }
 
         @-o-keyframes imageAnimation {
-            0%      {opacity: 0; -o-animation-timing-function: ease-in;}
-            8%      {opacity: 1; -o-transform: scale(1.05); -o-animation-timing-function: ease-out;}
-            17%     {opacity: 1; -o-transform: scale(1.1);}
-            25%     {opacity: 0; -o-transform: scale(1.1);}
-            100%    {opacity: 0}}
+            0% {
+                opacity: 0;
+                -o-animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                -o-transform: scale(1.05);
+                -o-animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1;
+                -o-transform: scale(1.1);
+            }
+            25% {
+                opacity: 0;
+                -o-transform: scale(1.1);
+            }
+            100% {
+                opacity: 0
+            }
+        }
 
         @-ms-keyframes imageAnimation {
-            0%      {opacity: 0; -ms-animation-timing-function: ease-in;}
-            8%      {opacity: 1; -ms-transform: scale(1.05); -ms-animation-timing-function: ease-out;}
-            17%     {opacity: 1; -ms-transform: scale(1.1);}
-            25%     {opacity: 0; -ms-transform: scale(1.1);}
-            100%    {opacity: 0}
+            0% {
+                opacity: 0;
+                -ms-animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                -ms-transform: scale(1.05);
+                -ms-animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1;
+                -ms-transform: scale(1.1);
+            }
+            25% {
+                opacity: 0;
+                -ms-transform: scale(1.1);
+            }
+            100% {
+                opacity: 0
+            }
         }
-        @keyframes imageAnimation {
-            0%      {opacity: 0; animation-timing-function: ease-in;}
-            8%      {opacity: 1; transform: scale(1.05); animation-timing-function: ease-out;}
-            17%     {opacity: 1; transform: scale(1.1);}
-            25%     {opacity: 0; transform: scale(1.1);}
-            100%    {opacity: 0}}
 
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                transform: scale(1.05);
+                animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            25% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 0
+            }
+        }
 
         /* Show at least something when animations not supported */
-        .no-cssanimations .slideshow li span{opacity: 1;}
+        .no-cssanimations .slideshow li span {
+            opacity: 1;
+        }
 
-        .menu {background: url("img/icons.png") left top; width: 620px; height: 118px;position: relative; position: fixed; left: 30px; bottom: 30px; z-index: 999; width:  620px; padding: 15px; padding-bottom: 0; padding-right: 0}
-            .menu__square {cursor: pointer; background: transparent; position: absolute;  width: 40px; height: 40px; overflow: hidden; margin: 0 10px  10px 0;  -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear;  -webkit-transition: all 0.4s linear;}
-        .menu__square:hover {z-index: 99; position: absolute; left: 0; bottom: -10px; width: 100%; height: 118px; font-size: 24px; color: #fff}
-        .bordoBg        {left: 15px; top: 15px;}  .bordoBg:hover  {top: 15px; background: #821f34}
-        .yellowBg       {left: 15px; bottom: 4px;}  .yellowBg:hover {background: #e4b05b}
-        .violetBg       {left: 65px; bottom: 4px;}  .violetBg:hover {background: #6f454f}
-        .greenBg        {left: 115px; bottom: 4px;} .greenBg:hover  {background: #416b65}
-        .orangeBg       {left: 165px; bottom: 4px;} .orangeBg:hover {background: #e9714c}
-        .blueBg         {left: 215px; bottom: 4px;} .blueBg:hover   {background: #979aa0}
-        .menu__img      {float: left; padding: 35px;}
-        .menu__square p {float: left; width: 400px; margin-top: 35px}
-        .menu__smalltext{font: 16px/24px "Roboto Condensed" , Tahoma, arial; color: #fff; float: right}
+        .menu {
+            background: url("img/icons.png") left top;
+            width: 620px;
+            height: 118px;
+            position: relative;
+            position: fixed;
+            left: 30px;
+            bottom: 30px;
+            z-index: 999;
+            width: 620px;
+            padding: 15px;
+            padding-bottom: 0;
+            padding-right: 0
+        }
 
+        .menu__square {
+            cursor: pointer;
+            background: transparent;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            margin: 0 10px 10px 0;
+            -moz-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
+            -webkit-transition: all 0.4s linear;
+        }
 
-        .menu--top      {width: 404px; height: 76px; padding: 15px; position: fixed; z-index: 999; left: 0; top: 105px;background: url("img/icons--2.png") left top}
-        .menu--top .menu__square {top: 20px; border: 1px solid red; width: 50px}
-        .bordoBg        {left: 18px}
-        .yellowBg       {left: 80px}
-        .violetBg       {left: 145px}
-        .greenBg        {left: 208px}
-        .orangeBg       {left: 272px}
-        .blueBg         {left: 335px}
+        .menu__square:hover {
+            z-index: 99;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 118px;
+            font-size: 24px;
+            color: #fff
+        }
 
+        .bordoBg {
+            left: 15px;
+            top: 15px;
+        }
+
+        .bordoBg:hover {
+            top: 15px;
+            background: #821f34
+        }
+
+        .yellowBg {
+            left: 15px;
+            bottom: 4px;
+        }
+
+        .yellowBg:hover {
+            background: #e4b05b
+        }
+
+        .violetBg {
+            left: 65px;
+            bottom: 4px;
+        }
+
+        .violetBg:hover {
+            background: #6f454f
+        }
+
+        .greenBg {
+            left: 115px;
+            bottom: 4px;
+        }
+
+        .greenBg:hover {
+            background: #416b65
+        }
+
+        .orangeBg {
+            left: 165px;
+            bottom: 4px;
+        }
+
+        .orangeBg:hover {
+            background: #e9714c
+        }
+
+        .blueBg {
+            left: 215px;
+            bottom: 4px;
+        }
+
+        .blueBg:hover {
+            background: #979aa0
+        }
+
+        .menu__img {
+            float: left;
+            padding: 35px;
+        }
+
+        .menu__square p {
+            float: left;
+            width: 400px;
+            margin-top: 35px
+        }
+
+        .menu__smalltext {
+            font: 16px/24px "Roboto Condensed", Tahoma, arial;
+            color: #fff;
+            float: right
+        }
+
+        .menu--top {
+            width: 404px;
+            height: 76px;
+            padding: 15px;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 105px;
+            background: url("img/icons--2.png") left top
+        }
+
+        .menu--top .menu__square {
+            top: 20px;
+            border: 1px solid red;
+            width: 50px
+        }
+
+        .bordoBg {
+            left: 18px
+        }
+
+        .yellowBg {
+            left: 80px
+        }
+
+        .violetBg {
+            left: 145px
+        }
+
+        .greenBg {
+            left: 208px
+        }
+
+        .orangeBg {
+            left: 272px
+        }
+
+        .blueBg {
+            left: 335px
+        }
 
         /*------------------------MENU-------------------------------*/
 
@@ -207,7 +452,6 @@
             background-size: cover;
             background-position: center center;
         }
-
 
         /* ====================================
         Navigation
@@ -315,11 +559,25 @@
             opacity: 1;
         }
 
-        nav li:nth-of-type(1){background-color: #821f34}
-        nav li:nth-of-type(2){background-color: #e4b05b}
-        nav li:nth-of-type(3){background-color: #6e444e}
-        nav li:nth-of-type(4){background-color: #979aa0}
-        nav li:nth-of-type(5){background-color: #e9714c}
+        nav li:nth-of-type(1) {
+            background-color: #821f34
+        }
+
+        nav li:nth-of-type(2) {
+            background-color: #e4b05b
+        }
+
+        nav li:nth-of-type(3) {
+            background-color: #6e444e
+        }
+
+        nav li:nth-of-type(4) {
+            background-color: #979aa0
+        }
+
+        nav li:nth-of-type(5) {
+            background-color: #e9714c
+        }
 
         .slide-in-nav-item {
             animation: slide-in-nav-item 0.4s linear 1 .2s both;
@@ -360,7 +618,6 @@
         .slide-in-nav-item-delay-4-reverse {
             animation: slide-in-nav-item-reverse .3s linear 1 both;
         }
-
 
         /* ====================================
         Burger king
@@ -407,7 +664,6 @@
         .animate-out-middle-bar {
             animation: animate-out-middle-bar .6s linear 1 both
         }
-
 
         /* ====================================
         Animation keyframes
@@ -538,7 +794,8 @@
                 background-color: #fff;
             }
         }
-        .home a{
+
+        .home a {
             font-family: "Work Sans", sans-serif;
             color: #fff;
             font-weight: 300;
@@ -547,140 +804,87 @@
             text-decoration: none;
             position: absolute;
             z-index: 10;
-            top:50px;
-            left:50px;
+            top: 50px;
+            left: 50px;
             padding-bottom: 3px;
             border-bottom: 1px solid #fff;
         }
+
         @media (max-width: 640px) {
             nav ul li a {
                 font-size: 11px;
             }
+
             nav li a:after {
                 font-size: 0.6rem;
             }
+
             .open-overlay {
                 right: 1rem;
             }
+
             nav li a:before {
                 width: 15px;
             }
         }
-        .scaleDownIn      {transition: transform 1.0s ease, opacity 1.0s ease; transform: scale(1.0,1.0); opacity: 1.0;}
-        .scaleDownOut     {transition: transform 1.0s ease, opacity 1.0s ease; transform: scale(1.0,1.0); opacity: 0.0;}
-        .fromLeftIn       {transition: transform 1.0s ease, opacity 1.0s ease; transform: translate(0,0); opacity: 1.0;}
-        .fromLeftOut      {transition: transform 1.0s ease, opacity 1.0s ease; transform: translate(-20px,0); opacity: 0.0;}
-        .fromRightIn      {transition: transform 1.0s ease, opacity 1.0s ease; transform: translate(0,0); opacity: 1.0;}
-        .fromRightOut     {transition: transform 1.0s ease, opacity 1.0s ease; transform: translate(20px, 0); opacity: 0.0;}
+
+        .scaleDownIn {
+            transition: transform 1.0s ease, opacity 1.0s ease;
+            transform: scale(1.0, 1.0);
+            opacity: 1.0;
+        }
+
+        .scaleDownOut {
+            transition: transform 1.0s ease, opacity 1.0s ease;
+            transform: scale(1.0, 1.0);
+            opacity: 0.0;
+        }
+
+        .fromLeftIn {
+            transition: transform 1.0s ease, opacity 1.0s ease;
+            transform: translate(0, 0);
+            opacity: 1.0;
+        }
+
+        .fromLeftOut {
+            transition: transform 1.0s ease, opacity 1.0s ease;
+            transform: translate(-20px, 0);
+            opacity: 0.0;
+        }
+
+        .fromRightIn {
+            transition: transform 1.0s ease, opacity 1.0s ease;
+            transform: translate(0, 0);
+            opacity: 1.0;
+        }
+
+        .fromRightOut {
+            transition: transform 1.0s ease, opacity 1.0s ease;
+            transform: translate(20px, 0);
+            opacity: 0.0;
+        }
     </style>
 </head>
-<body>
+<body style="overflow: hidden">
 <div style="height: 100%; min-height: 100%;">
     <div style="padding: 20px 20px 10px 20px; border: 1px solid #e4b05c; background: #fff; z-index: 999; position: fixed; left: 30px; top: 25px;">
         <h1 data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="logo__left__smalltext"
             style="border-bottom: 1px solid #ccc; margin-bottom: 10px; font-family: 'Fira Sans Extra Condensed', sans-serif; line-height: 28px; padding-left: 3px; font-size: 24px">
             ЛІТИНСЬКА СЕРЕДНЯ ЗАГАЛЬНООСВІТНЯ</h1>
-            <div class="logo__bigtext">ШКОЛА <span
-                    style="font-size: 24px; font-family: 'Fira Sans Extra Condensed', sans-serif; color:#821f34"><span
-                    style="font-size: 20px">|-|||</span> CТУПЕНІВ</span> <span style="font-size: 28px">№</span>2
-            </div>
-    </div>
-    &nbsp;
-</div>
-<div style="height: 100%; min-height: 100%; background: red">
-    <div style="margin: 100px" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">jcsdsuvyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</div>
-    <div class="pinkBgCap block12__pinkBgCap" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">Дана Борисова, телеведущая:</div>
-    <div class="block12__text">
-        <b class="lightPinkText">«Секрет моей стройной фигуры и похудения instadiet.</b>
-        Каждое утро я начинаю с чайного напитка <b class="lightPinkText">"Идеальный вес"</b>
-        из плодов боярышника, коры крушины, листа толокнянки,
-        кукурузных рылец, листа березы, корня лопуха, семян
-        льна, листья стевии. В обед я использую волшебный <b class="lightPinkText">"Smooth8"</b> хватает 56 капель на стакан воды. Ну а на вечер остаётся кисель
-        <b class="lightPinkText">"Овсяный со льном"</b>, в его составе фруктоза, мука овсяная,
-        мука льняная. <b class="lightyellowText">При этом я полноценно питаюсь, а Instadiet помогает мне поддерживать стройность!»</b>
-    </div>
-</div>
-<!--<div class="menu--top">
-    <div style="display: flex; display: -webkit-flex; width: 367px; justify-content: space-between; margin-bottom: 15px ">
-        <div class="menu__square bordoBg">
-            Про школу
-        </div>
-        <!-- <h1 class="logo__left__smalltext" style="font-family: 'Fira Sans Extra Condensed', sans-serif;">ЛІТИНСЬКА&nbsp;&nbsp;СЕРЕДНЯ&nbsp;&nbsp;ЗАГАЛЬНООСВІТНЯ</h1>-->
-        <!--<div class="menu__square yellowBg">
-            <img class="menu__img" src="img/open.png" alt="" />
-            <p>ПРОЗОРІСТЬ ТА ІНФОРМАЦІЙНА ВІДКРИТІСТЬ ЗАКЛАДУ</p>
-        </div>
-        <div class="menu__square violetBg">
-            <img class="menu__img" src="img/news.jpg" alt="" />
-            <p>НОВИНИ</p>
-            <a class="menu__smalltext">1.09.19 Свято 1 вересня</a>
-            <a class="menu__smalltext">8.09.19 Земля наш дім</a>
-            <a class="menu__smalltext">24.09.19 Провила БЖД</a>
-        </div>
-        <div class="menu__square greenBg">
-            <img class="menu__img" src="img/news.jpg" alt="" />
-            <p>НАШІ ТАЛАНТИ</p>
-        </div>
-        <div class="menu__square orangeBg">
-            <img class="menu__img" src="img/owl.jpg" alt="" />
-            <p>УЧИТЕЛІ</p></div>
-        <div class="menu__square blueBg">
-            <img class="menu__img" src="img/news.jpg" alt="" />
-            <p>КОНТАКТИ</p>
-            <div class="menu__smalltext">
-                <p class="contact__p"><span><img src="img/i1.jpg" alt="" /></span>Вінницька обл.,  смт Літин,  вул.&nbsp;Леніна, буд.&nbsp;№&nbsp;42</p>
-                <p class="contact__p"><span><img src="img/i2.jpg" alt="" /></span>(247) 2-14-95 &nbsp;//&nbsp; 2-13-68</p>
-                <p class="contact__p"><span><img src="img/i3.jpg" alt="" /></span>zosh2lt@ukr.net &nbsp;//&nbsp; sch2@ltedu.vn.ua</p>
-                <p class="contact__p"><a href="#"><span><img src="img/i5.jpg" alt="" /></span>Ми у фейсбук</a></p>
-                <p class="contact__p"><a href="#"><span><img src="img/i4.jpg" alt="" /></span>Написати нам</a></p>
-            </div>
+        <div class="logo__bigtext">ШКОЛА <span
+                style="font-size: 24px; font-family: 'Fira Sans Extra Condensed', sans-serif; color:#821f34"><span
+                style="font-size: 20px">|-|||</span> CТУПЕНІВ</span> <span style="font-size: 28px">№</span>2
         </div>
     </div>
-    <!--<h1 class="logo__left__smalltext" style="font-family: 'Fira Sans Extra Condensed', sans-serif; line-height: 28px; padding-left: 3px; font-size: 24px">ЛІТИНСЬКА СЕРЕДНЯ ЗАГАЛЬНООСВІТНЯ</h1>
-    <div class="logo__bigtext">ШКОЛА <span style="font-size: 24px; font-family: 'Fira Sans Extra Condensed', sans-serif; color: #363846"><span style="font-size: 20px">|-|||</span> CТУПЕНІВ</span> <span style="font-size: 28px">№</span>2</div>-->
 </div>
-
-       <ul class="slideshow">
-            <li><span>Image 01</span></li>
-            <li><span>Image 02</span></li>
-            <li><span>Image 03</span></li>
-            <li><span>Image 04</span></li>
-            <li><span>Image 05</span></li>
-            <li><span>Image 06</span></li>
-        </ul>
-<!--<ul style="position: fixed; left: 0; top:0; height: 100%; width: 20%; background: brown">                <li><a>Прозорість та інформаційна відкритість закладу</a></li>
-    <li><a>Новини</a></li>
-    <li><a>Учителі</a></li>
-    <li><a>Наші таланти</a></li>
-    <li><a>Контакти</a></li></ul>
-    </div>-->
-
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/ScrollTrigger.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.toform').click(function(){
-            $("html, body").animate({scrollTop: $("#bottomform").offset().top-0}, 1000);
-            return false;
-        });
-    });
-</script>
-<script>
-    window.counter = function() {
-        // this refers to the html element with the data-scroll-showCallback tag
-        var span = this.querySelector('span');
-        var current = parseInt(span.textContent);
-
-        span.textContent = current + 1;
-    };
-    document.addEventListener('DOMContentLoaded', function(){
-        var trigger = new ScrollTrigger({
-            addHeight: true,
-            once: true
-        });
-    });
-</script>
+<ul class="slideshow">
+    <li><span>Image 01</span></li>
+    <li><span>Image 02</span></li>
+    <li><span>Image 03</span></li>
+    <li><span>Image 04</span></li>
+    <li><span>Image 05</span></li>
+    <li><span>Image 06</span></li>
+</ul>
 </body>
 </html>
 
